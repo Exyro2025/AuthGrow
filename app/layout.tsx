@@ -1,26 +1,16 @@
-// app/layout.tsx
+// app/publish/layout.tsx
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AuthGrow',
-  description: 'AuthGrow — Lite Publisher',
+  title: 'Publish • AuthGrow',
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function PublishLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body
-        style={{
-          fontFamily: 'system-ui, sans-serif',
-          padding: 24,
-          maxWidth: 900,
-          margin: '0 auto',
-        }}
-      >
-        {children}
-      </body>
-    </html>
+    <section style={{ display: 'block', gap: 16 }}>
+      {children}
+    </section>
   );
 }
 
