@@ -1,14 +1,14 @@
-// app/layout.tsx
 import type { ReactNode } from 'react';
 
-export const metadata = { title: 'AuthGrow' };
+export const metadata = {
+  title: 'Publish – AuthGrow',
+};
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function PublishLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body style={{ fontFamily: 'system-ui, sans-serif', padding: 24 }}>
-        {children}
-      </body>
-    </html>
+    <section style={{ padding: 20 }}>
+      <h2>Publish Section</h2>
+      {children}
+    </section>
   );
 }
